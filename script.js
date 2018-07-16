@@ -5,25 +5,12 @@ let words = filler.split(' ');
 let totalWords = function(){
   document.getElementById('total').innerHTML = words.length;
 };
-//
-//   let dupes = [];
-// let dupeWords = () => {
-//   totalWords.forEach(function(word){
-//     if(word.charAt(0) == 'p'){
-//       return word
-//     }
-//     dupes.push(word)
-//   })
-//
-// }
-// console.log(dupes.length);
-let dubs = [];
 
-words.forEach(function(word){
-  if(word.charAt(0) === 'w'){
-    dubs.push(word);
-  }
-})
+let dupes = 'art party tousled palo santo craft beer flannel pork belly shaman authentic mlkshk yr hexagon meh tumblr fixie street biodiesel gentrify tacos selvage pok bitters quinoa semiotics slow-carb migas chillwave you probably haven\'t heard of them williamsburg plaid tbh pop-up whatever'
 
+let dWords = dupes.split(' ');
 
-console.log(dubs);
+let duplicateWords = () => {
+  document.getElementById('dupe').innerHTML = `there are ${dWords.length} duplicate wordsssss`;
+  console.log(dWords.length);
+}
