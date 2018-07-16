@@ -1,3 +1,4 @@
+
 h1{
   background-color: red;
 }
@@ -7,9 +8,9 @@ button{
   color: #ffffff;
   padding: 8px;
   font-size: 14px;
-  margin-right: 20px;
+  margin-right: 60px;
 }
 
-.buttons{
-  display: inline-block;
+.first{
+  margin: 20px;
 }
