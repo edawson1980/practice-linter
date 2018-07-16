@@ -3,7 +3,7 @@ let filler ='Flannel meh palo santo 8-bit, hammock tumblr pok pok chicharrones b
 let words = filler.split(' ');
 
 let totalWords = function(){
-  document.getElementById('total').innerHTML = words.length;
+  document.getElementById('total').innerHTML = `There are ${words.length} words in this paragraph.`;
 };
 
 let dupes = 'art party tousled palo santo craft beer flannel pork belly shaman authentic mlkshk yr hexagon meh tumblr fixie street biodiesel gentrify tacos selvage pok bitters quinoa semiotics slow-carb migas chillwave you probably haven\'t heard of them williamsburg plaid tbh pop-up whatever'
@@ -11,6 +11,17 @@ let dupes = 'art party tousled palo santo craft beer flannel pork belly shaman a
 let dWords = dupes.split(' ');
 
 let duplicateWords = () => {
-  document.getElementById('dupe').innerHTML = `there are ${dWords.length} duplicate wordsssss`;
+  document.getElementById('dupe').innerHTML = `There are ${dWords.length} duplicated words in this paragraph.`;
   console.log(dWords.length);
+}
+
+let sentenceCount = 0;
+
+let sentCount = () => {
+  words.forEach(function(word){
+    if(word.charAt(word.length-1) == '.'){
+      sentenceCount++;
+    }
+  })
+  document.getElementById('sentence').innerHTML = `There are ${sentenceCount} sentences in this paragraph.`
 }
