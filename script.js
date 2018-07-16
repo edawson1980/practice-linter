@@ -11,6 +11,8 @@ let totalWords = () => {
   t.innerHTML = `There are ${words.length} words in this paragraph.`
 };
 
+
+
 let toggle1 = () => {
   if(t.style.color != 'black'){
     t.style.color = 'black';
@@ -34,6 +36,8 @@ let todos2 = () => {
 let todos3 = () => {
   sentCount();
   toggle3();
+  s.removeEventListener('onclick', todos3);
+
 }
 
 let dupes = 'art party tousled palo santo craft beer flannel pork belly shaman authentic mlkshk yr hexagon meh tumblr fixie street biodiesel gentrify tacos selvage pok bitters quinoa semiotics slow-carb migas chillwave you probably haven\'t heard of them williamsburg plaid tbh pop-up whatever'
