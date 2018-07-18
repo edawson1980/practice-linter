@@ -14,3 +14,12 @@ button{
 .first{
   margin: 20px;
 }
+
+.sub-intro{
+  text-transform: uppercase;
+}
+
+.main{
+  background: #f5f5f5;
+  padding: 2%;
+}
